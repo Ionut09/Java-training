@@ -5,8 +5,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static java.util.Collections.sort;
-
 public class SortingStrings {
 
     public static void main(String... args) {
@@ -15,7 +13,7 @@ public class SortingStrings {
 
         List<String> stringList = putWordIntoAList(srt);
 
-        sort(stringList);
+        Collections.sort(stringList);
 
         System.out.println(stringList);
 
@@ -24,7 +22,7 @@ public class SortingStrings {
 
     public static List<String> putWordIntoAList(String srt) {
         return Arrays.stream(srt.split("\\s+"))
-                     .map(String::toLowerCase)
+                     .map(String::toLowerCase)//String
                      .collect(Collectors.toList());
     }
 }
