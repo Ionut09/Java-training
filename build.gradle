@@ -1,0 +1,22 @@
+plugins {
+	id 'java'
+}
+
+group = 'com.php'
+version = '1.0.0-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.4.1'
+
+	compileOnly 'org.projectlombok:lombok:1.18.16'
+	annotationProcessor 'org.projectlombok:lombok:1.18.16'
+}
+
+test {
+	useJUnitPlatform()
+}
