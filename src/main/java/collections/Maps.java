@@ -1,6 +1,5 @@
 package collections;
 
-import org.springframework.util.CollectionUtils;
 
 import java.util.Comparator;
 import java.util.HashMap;
@@ -60,8 +59,8 @@ public class Maps {
         names.size();       // if (names.size() == 0)
         names.isEmpty();    // if(names.isEmpty())
 
-        if (CollectionUtils.isEmpty(names)) {  //avoids NPE
-
-        }
+//        if (CollectionUtils.isEmpty(names)) {  //avoids NPE
+//
+//        }
     }
 }

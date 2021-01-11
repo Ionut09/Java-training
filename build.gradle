@@ -12,6 +12,8 @@ repositories {
 
 dependencies {
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.4.1'
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.1'
+	compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.11.1'
 
 	compileOnly 'org.projectlombok:lombok:1.18.16'
 	annotationProcessor 'org.projectlombok:lombok:1.18.16'
