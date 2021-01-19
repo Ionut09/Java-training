@@ -9,8 +9,6 @@ public class PassByReference {
         greenHouse.setColor("green");
         greenHouse.getColor();
         printHouseColor(greenHouse);
-
-
     }
 
     private static void printHouseColor(House house) {
